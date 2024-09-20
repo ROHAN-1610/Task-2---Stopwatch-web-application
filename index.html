@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch">
+            <div class="watch-face">
+                <div class="display">
+                    <span id="time">00:00:00.000</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start" class="btn">Start</button>
+                <button id="pause" class="btn">Pause</button>
+                <button id="reset" class="btn">Reset</button>
+                <button id="lap" class="btn">Lap</button>
+            </div>
+        </div>
+        <div class="laps">
+            <h2>Lap Times</h2>
+            <ul id="lap-list"></ul>
+            <div class="lap-stats">
+                <p>Average Lap: <span id="avg-lap-time">00:00.000</span></p>
+                <p>Total Time: <span id="total-time">00:00:00.000</span></p>
+            </div>
+            <div class="lap-actions">
+                <button id="sort-asc" class="btn">Sort Asc</button>
+                <button id="sort-desc" class="btn">Sort Desc</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
